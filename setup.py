@@ -42,7 +42,7 @@ setup(name='postpic',
                         # ndarray.tobytes was introduced in np 1.9 and workaround in vtk routines
                         # does not work for python 2
                         'numpy>=1.8', 'numpy>=1.9;python_version<"3.0"',
-                        'scipy>=1.6', 'scipy<= 1.15;python_version=="3.10"',
+                        'scipy>=1.6', 'scipy<= 1.15;python_version=="3.10"', 'scipy <=1.17',
                         'future', 'urllib3',
                         'contourpy <= 1.3.1; python_version=="3.10"', 'numexpr',
                         'cython>=0.18', 'functools32;python_version<"3.0"',

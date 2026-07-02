@@ -204,7 +204,7 @@ class _SingleSpecies(object):
           an optional name of the condition. This can later be reviewed by
           calling 'self.compresslog()'
         """
-        condition = np.asarray(condition)
+        condition = np.atleast_1d(condition)
         if condition.dtype is np.dtype('bool'):
             # Case 1:
             # condition is list of boolean values specifying particles to use
